@@ -1,0 +1,50 @@
+{
+  "name": "chrome-extension-framework",
+  "version": "1.0.0",
+  "description": "the chrome extension framework",
+  "scripts": {
+    "build": "webpack --progress",
+    "watch": "webpack --progress --watch"
+  },
+  "author": {
+    "name": "Jianwei Zheng",
+    "email": "zhengjw96@outlook.com",
+    "url": ""
+  },
+  "private": true,
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^2.0.2",
+    "copy-webpack-plugin": "^5.0.3",
+    "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "vue-loader": "^15.7.0",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.31.0",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "webpack-cli": "^3.3.2"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.4.4",
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.0-rc.28",
+    "jdenticon": "^2.2.0",
+    "jr-qrcode": "^1.1.1",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1",
+    "vuex-persist": "^1.4.3",
+    "vue-m-validator": "^1.0.5",
+    "base-58": "0.0.1",
+    "bignumber.js": "^7.2.1"
+  }
+}

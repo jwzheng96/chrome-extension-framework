@@ -1,0 +1,36 @@
+{
+    "manifest_version": 2,
+    "name": "chrome extension framework",
+    "version": "1.0.0",
+    "description": "zhengjw19@outlook.com",
+    "icons": {
+        "16":"static/img/icon.jpg",
+        "19":"static/img/icon.jpg",
+        "38":"static/img/icon.jpg",
+        "48": "static/img/icon.jpg",
+		"128": "static/img/icon.jpg"
+    },
+    "browser_action":
+    {
+        "default_icon": "static/img/icon.jpg",
+        "default_title": "chrome extension framework",
+        "default_popup": "popup.html"
+    },
+    "options_page": "option.html",
+    "background":
+    {
+        "persistent": false,
+        "scripts": ["background.main.js"]
+    },
+    "content_scripts": [
+    {
+        "matches": ["https://*.baidu.com/*", "http://*.baidu.com/*"],
+        "js": ["content.main.js"],
+        "run_at": "document_end"
+    }],
+    "permissions": [
+        "http://*/*",
+        "https://*/*",
+        "<all_urls>"
+    ]
+}
